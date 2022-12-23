@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+section#conteudo{
+	width: 1200px;
+	text-align: center;
+}
+img#esquema-glass{
+	opacity: 0.7;
+}
+iframe#frame-spec{
+	width: 450px;
+	height: 280px;
+	border: none;
+	overflow: hidden;
+}
+

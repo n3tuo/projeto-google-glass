@@ -1,0 +1,95 @@
+@charset "ut8-8";
+ul#album{
+	width: 1200px;
+	margin: 0px;
+	padding: 70px;
+	overflow: hidden;
+	list-style: none;
+}
+ul#album li{
+	float: left;
+	width: 300px;
+	height: 300px;
+	margin: 10px;
+	margin-left: 33px;
+	border: 2px solid #f5f5f5;
+	background-color: #f5f5f5;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+	transition-duration: .5s;
+}
+ul#album li:hover{
+	transform: scale(1.5);
+}
+ul#album li span{
+	opacity: 0;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1.0);
+	font-size: 10pt;
+	background-color: rgba(0, 0, 0, .4);
+	line-height: 567px;
+	padding: 8px;
+	transition: opacity .5s;
+}
+ul#album li:hover span{
+	opacity: 1;
+}
+ul#album li#foto01{
+	background: url('../_imagens/galeria-01.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 500px 500px;
+	background-color: #f5f5f5;
+}
+ul#album li#foto02{
+	background: url('../_imagens/galeria-02.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 500px 500px;
+	background-color: #f5f5f5;
+}
+ul#album li#foto03{
+	background: url('../_imagens/galeria-03.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 500px 500px;
+	background-color: #f5f5f5;
+}
+ul#album li#foto04{
+	background: url('../_imagens/galeria-04.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 500px 500px;
+	background-color: #f5f5f5;
+}
+ul#album li#foto05{
+	background: url('../_imagens/galeria-05.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 500px 500px;
+	background-color: #f5f5f5;
+}
+ul#album li#foto06{
+	background: url('../_imagens/galeria-06.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 500px 500px;
+	background-color: #f5f5f5;
+}
+ul#album li#foto01:hover{
+background-position: 0px 0px;
+background-size: 300px;
+}
+ul#album li#foto02:hover{
+background-position: 0px 0px;
+background-size: 300px;
+}
+ul#album li#foto03:hover{
+background-position: 0px 0px;
+background-size: 300px;
+}
+ul#album li#foto04:hover{
+background-position: 0px 0px;
+background-size: 300px;
+}
+ul#album li#foto05:hover{
+background-position: 0px 0px;
+background-size: 300px;
+}
+ul#album li#foto06:hover{
+background-position: 0px 0px;
+background-size: 300px;
+}

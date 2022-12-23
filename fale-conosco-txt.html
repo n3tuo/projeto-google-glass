@@ -1,0 +1,235 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Tudo sobre Google Glass</title>
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+        <link rel="stylesheet" type="text/css" href="_css/form.css">
+        <script>
+            function calc_total(){
+                var qtd = parseFloat(document.getElementById('iQtd').value);
+                total = qtd * 1499.99;
+                document.getElementById('iValor').value = total; 
+            }
+        </script>
+    </head>
+    <script type="text/javascript" src="_javascript/funcoes.js"></script>
+    <body>
+        <div id="interface">
+            <header id= "cabecalho">
+                <hgroup>
+                    <h1>Google Glass</h1>
+                    <h2>A revolução do Google está chegando</h2>
+                </hgroup>
+
+                <img id="icone" src="_imagens/contato.png">
+                    
+                <nav id="menu">
+                    <h1>Menu Principal</h1>
+                    <ul type="disc">
+                        <li onmouseover="MudaFoto('home')" onmouseout="MudaFoto('contato')">
+                            <a href="index-txt.html">
+                                Home
+                            </a>
+                        </li>
+                        <li onmouseover="MudaFoto('especificacoes')" onmouseout="MudaFoto('contato')">
+                            <a href="specs-txt.html">
+                                Especificações
+                            </a>
+                        </li>
+                        <li onmouseover="MudaFoto('fotos')" onmouseout="MudaFoto('contato')">
+                            <a href="fotos-txt.html">
+                                Fotos
+                            </a>
+                        </li>
+                        <li onmouseover="MudaFoto('multimidia')" onmouseout="MudaFoto('contato')">
+                            <a href="multimidia-txt.html">
+                                Multimídia
+                            </a>
+                        </li>
+                        <li onmouseover="MudaFoto('contato')" onmouseout="MudaFoto('contato')">
+                            <a href="fale-conosco-txt.html">
+                                Fale conosco
+                            </a>
+                        </li>
+                    </ul>
+                    </nav>
+            </header>
+            <section id="corpo-full">
+                <article id="noticia-principal">
+                    <header id="cabecalho-artigo">
+                        <hgroup>
+                            <h3>Fale Conosco > Contato</h3>
+                            <h1>Formulário de Contato</h1>
+                            <h2>por Gustavo Guanabara</h2>
+                            <h3 class="direita">Atualizado em 23/Abril/2013</h3>
+                        </hgroup>
+                    </header>
+                </article>
+            </section>
+
+
+            <div id="formulario">
+                <form method="post" id="fContato" action="mailto:contato@cursoemvideo.com" oninput="calc_total()";>                
+                    <fieldset id="usuario">
+                        <legend>
+                            Identificação do Usuário
+                        </legend>
+                        <p>
+                            <label for="iName">
+                                Nome:
+                            </label>
+                            <input type="text" name="nName" id="iName" size="20" maxlength="30" placeholder="Nome completo">
+                        </p>
+                        <p>
+                            <label for="iSenha">
+                                Senha:
+                            </label>
+                            <input type="password" name="nSenha" id="iSenha" size="8" maxlength="8" placeholder="Oito digitos">
+                        </p>
+                        <p>
+                            <label for="iMail">
+                                E-mail:
+                            </label>
+                            <input type="email" name="nMail" id="iMail" size="20" maxlength="40" placeholder="user@example.com">
+                        </p>
+                        <p>
+                            <label for="iData">
+                                Data de Nascimento:
+                            </label>
+                            <input type="date" name="nData" id="iData">
+                        </p>
+                        <fieldset id="sexo">
+                            <legend>
+                                Sexo:
+                            </legend>
+                            <p>
+                                <input type="radio" name="nSexo" id="iMasc">
+                                <label for="iMasc">
+                                    Masculino
+                                </label>
+                            </p>
+                            <p>
+                                <input type="radio" name="nSexo" id="iFem">
+                                <label for="iFem">
+                                    Feminino
+                                </label>
+                            </p>
+                        </fieldset>
+                    </fieldset>
+                    <fieldset id="endereco">
+                        <legend>
+                            Endereço do Usuário
+                        </legend>
+                    <p>
+                        <label for="iRua">
+                            Logradouro:
+                        </label>
+                        <input type="text" name="Nrua" id="iRua">
+                    </p>
+                    <p>
+                        <label for="iNum">
+                            Número:
+                        </label>
+                        <input type="number" name="nNum" id="iNum" min="1" max="99999">
+                    </p>
+                    <p>
+                        <label for="iEst">
+                            Estado:
+                        </label>
+                        <select name="nEst" id="iEst">
+                            <optgroup label="selecione">
+                                <option value="--" selected>
+                                    -selecione
+                                </option>
+                                <option value="ES">
+                                    Espirito Santo
+                                </option>
+                                <option value="MG">
+                                    Minas Gerais
+                                </option>
+                                <option value="SP">
+                                    Sao Paulo
+                                </option>
+                                <option value="RJ">
+                                    Rio de Janeiro
+                                </option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="iCity">
+                            Cidade:
+                        </label>
+                        <input type="text" name="nCity" id="iCity" size="15" maxlength="25" list="cidades">
+                        <datalist id="cidades">
+                            <option value="Belo Horizonte"></option>
+                            <option value="vitoria"></option>
+                            <option value="Sao Paulo"></option>
+                            <option value="Rio de Janeiro"></option>
+                        </datalist>
+                    </p>
+                    </fieldset>
+                    <fieldset id="mensagem">
+                        <legend>
+                            Mensagem do Usuário
+                        </legend>
+                        <p>
+                            <label for="iUrg">
+                                Grau de Urgência:<br>
+                            </label>
+                            Min 
+                            <input type="range" name="nUrg" id="iUrg" min="1" max="3">
+                            Max
+                        </p>
+                        <p>
+                            <label for="iMsg">
+                                Mensagem:<br>
+                            </label>
+                            <textarea name="nMsg" id="iMsg" cols="35" rows="5" placeholder="Deixe aqui sua mensagem e suas dúvidas:"></textarea>
+                        </p>
+                    </fieldset>
+                    <fieldset id="pedido">
+                        <legend>
+                            Quero um Google Glass
+                        </legend>
+                        <p>
+                            <input type="checkbox" name="nPed" id="iPed" checked>
+                            <label for="iPed">
+                                Gostaria de adquirir um Google Glass<br> quando disponível
+                            </label>
+                        </p>
+                        <p>
+                            <label for="iCor">
+                                Cor:
+                            </label>
+                            <input type="color" name="nCor" id="iCor" value="#505050">
+                        </p>
+                        <p>
+                            <label for="iQtd">
+                                Quantidade:
+                            </label>
+                            <input type="number" name="nQtd" id="iQtd" min="0" max="5" size="2" value="1">
+                        </p>
+                        <p>
+                            <label for="iValor">Preço Total: R$</label>
+                            <input type="number" name="nValor" id="iValor" readonly>
+                        </p>
+                    </fieldset>
+                <input type="image" name="nSend" id="iSend" src="_imagens/botao-enviar.png">
+                </form>
+            </div>
+            <footer id="rodape">
+                <p>
+                    Copyright &COPY; 2013 - by Gustavo Guanabara<br>
+                    <a href="http://www.facebook.com/cursosemvideo" target="_blank">
+                        Facebook
+                    </a>
+                    <a href="http://www.twitter.com/cursosemvideo" target="_blank">
+                        Twitter
+                    </a>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

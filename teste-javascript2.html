@@ -1,0 +1,38 @@
+<!DOCTYPE>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>teste de js2</title>
+	<script type="text/javascript">
+		function acendeLampada() {
+			document.getElementById("luz").src="_imagens/lampada-acesa.jpg";
+		}
+		function apagaLampada(){
+			document.getElementById("luz").src="_imagens/lampada-apagada.jpg";
+		}
+		function quebraLampada() {
+			document.getElementById("luz").src="_imagens/lampada-quebrada.jpg";
+		}
+	</script>
+	<style type="text/css">
+		body{
+			background-color: #84ceeb;
+		}
+		section{
+			background-color: #ffffff;
+			margin: auto 390px auto 390px;
+			box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+			text-align: center;
+			font-size: 40px;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<h1>Acenda a lampada!</h1>
+		<img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="acendeLampada()" onmouseout="apagaLampada()" onclick="quebraLampada()">
+	</section>
+</body>
+</html>
